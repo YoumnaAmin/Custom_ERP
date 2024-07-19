@@ -21,6 +21,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     transition: background 0.3s ease;
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -32,6 +33,7 @@ header h1 {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     display: inline-block;
+    white-space: nowrap;
 }
 
 header p {
@@ -80,13 +82,15 @@ header p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    display: inline-block; /* Ensure the width matches the content */
-    white-space: nowrap; /* Prevent the text from wrapping */
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 @keyframes typing {
     from { width: 0; }
-    to { width: 25ch; }
+    to { width: 22ch; }
 }
 
 @keyframes blink-caret {

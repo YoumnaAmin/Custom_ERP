@@ -63,7 +63,6 @@ header p {
     z-index: 1000; /* Ensure it's above other content */
 }
 
-
 .start-now-button:hover {
     background: #3949ab; /* Darker purple */
 }
@@ -192,6 +191,7 @@ footer p {
     height: 50px;
     border-radius: 50%;
 }
+
 .module-gif {
     display: block;
     margin: 10px auto;
@@ -210,4 +210,47 @@ footer p {
 .final-gif img {
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Adjust font size */
+    }
+
+    .typing-effect {
+        font-size: 2.5em; /* Adjust font size */
+    }
+
+    .start-now-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        top: 15px; /* Adjust position */
+        right: 15px; /* Adjust position */
+    }
+
+    header p {
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em; /* Adjust font size */
+    }
+
+    .typing-effect {
+        font-size: 2em; /* Adjust font size */
+    }
+
+    .start-now-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        top: 10px; /* Adjust position */
+        right: 10px; /* Adjust position */
+    }
+
+    header p {
+        font-size: 0.9em; /* Adjust font size */
+    }
 }

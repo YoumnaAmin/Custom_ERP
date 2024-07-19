@@ -6,17 +6,16 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f7f9; /* Light background color */
+    background-color: #f5f7f9;
     color: #333;
 }
 
 header {
-    background: #1a237e; /* Dark blue */
+    background: #1a237e;
     color: white;
     padding: 20px 30px;
-    position: relative; /* Changed from fixed to relative */
     width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -27,14 +26,11 @@ header {
 header h1 {
     margin: 0;
     font-family: 'Playfair Display', serif;
-    font-size: 3em; /* Larger font size */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    display: inline-block;
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 header p {
@@ -42,35 +38,35 @@ header p {
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .start-now-button {
-    background: #5c6bc0; /* Light purple */
+    background: #5c6bc0;
     color: white;
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 5px;
     font-size: 18px;
-    position: fixed; /* Fixed positioning for the button */
-    top: 20px; /* Position from the top */
-    right: 20px; /* Position from the right */
+    position: fixed;
+    top: 20px;
+    right: 20px;
     display: flex;
     align-items: center;
     transition: background 0.3s ease;
     animation: bounceArrow 1s infinite;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 .start-now-button:hover {
-    background: #3949ab; /* Darker purple */
+    background: #3949ab;
 }
 
 .start-now-button::after {
     content: '→';
     margin-left: 10px;
-    font-size: 24px; /* Bigger arrow */
+    font-size: 24px;
 }
 
 .typing-effect {
@@ -78,12 +74,12 @@ header p {
     font-size: 3em;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 4px solid #fff; /* Cursor effect */
+    border-right: 4px solid #fff;
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes typing {
@@ -97,7 +93,7 @@ header p {
 }
 
 main {
-    margin-top: 180px; /* Adjust margin to account for header space */
+    margin-top: 180px;
 }
 
 #features {
@@ -107,19 +103,19 @@ main {
 
 #features h2 {
     font-family: 'Playfair Display', serif;
-    color: #1a237e; /* Dark blue */
+    color: #1a237e;
 }
 
 .feature {
-    background: #ffffff; /* White background for features */
+    background: #ffffff;
     padding: 20px;
     margin: 10px 0;
-    border: 1px solid #e0e0e0; /* Light grey border */
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .feature.visible {
@@ -130,21 +126,23 @@ main {
 .feature h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
-    color: #5c6bc0; /* Light purple */
+    color: #5c6bc0;
     margin-bottom: 10px;
 }
 
 .feature p {
     font-size: 1.2em;
-    color: #555; /* Darker grey for description */
+    color: #555;
 }
 
 .module-gif {
     display: block;
     margin: 10px auto;
     max-width: 100%;
-    height: 200px; /* Equal size for all GIFs */
-    object-fit: contain;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .final-gif {
@@ -153,12 +151,12 @@ main {
 }
 
 footer {
-    background: #ffffff; /* White background or use a light blue color like #e0f7fa */
+    background: #ffffff;
     color: #333;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
-    border-top: 4px solid #b0bec5; /* Darker line separating footer from content */
+    border-top: 4px solid #b0bec5;
 }
 
 footer h2 {
@@ -176,81 +174,18 @@ footer p {
 .social-icons a {
     display: inline-block;
     margin: 0 15px;
-    background-color: #f5f7f9; /* Match the page background color */
+    background-color: #f5f7f9;
     padding: 10px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
 }
 
 .social-icons a:hover {
-    background-color: #e0e0e0; /* Slightly darker background on hover */
+    background-color: #e0e0e0;
 }
 
 .social-icons img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
-
-.module-gif {
-    display: block;
-    margin: 10px auto;
-    max-width: 100%;
-    height: 200px; /* Equal size for all GIFs */
-    object-fit: cover; /* Adjusts the aspect ratio */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
-.final-gif {
-    text-align: center;
-    padding: 20px;
-}
-
-.final-gif img {
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em; /* Adjust font size */
-    }
-
-    .typing-effect {
-        font-size: 2.5em; /* Adjust font size */
-    }
-
-    .start-now-button {
-        padding: 10px 20px;
-        font-size: 16px;
-        top: 15px; /* Adjust position */
-        right: 15px; /* Adjust position */
-    }
-
-    header p {
-        font-size: 1em; /* Adjust font size */
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2em; /* Adjust font size */
-    }
-
-    .typing-effect {
-        font-size: 2em; /* Adjust font size */
-    }
-
-    .start-now-button {
-        padding: 8px 16px;
-        font-size: 14px;
-        top: 10px; /* Adjust position */
-        right: 10px; /* Adjust position */
-    }
-
-    header p {
-        font-size: 0.9em; /* Adjust font size */
-    }
 }
